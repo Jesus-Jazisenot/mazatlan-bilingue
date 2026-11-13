@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariscos La Ola Nueve — Menú / Menu</title>
+<meta name="description" content="Mariscos frescos estilo Sinaloa · menú de ejemplo · Fresh Sinaloa-style seafood · sample menu">
+
+<style>
+:root{--acento:#0E5A6B;--fg:#1c2326;--muted:#5b6569;--line:#dfe4e5;--bg:#fbfaf7;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:22px 16px 14px;max-width:640px;margin:0 auto}
+h1{font:700 1.75rem/1.15 Georgia,"Times New Roman",serif;color:var(--acento);margin:0 0 6px}
+.lema{color:var(--muted);font-style:italic;margin:0}
+.datos{color:var(--muted);font-size:.86rem;margin:8px 0 0}
+.barra{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)}
+.barra-in{max-width:640px;margin:0 auto;padding:8px 16px;display:flex;gap:10px;align-items:center}
+.idioma{display:flex;border:1.5px solid var(--acento);border-radius:99px;overflow:hidden;flex:none}
+.idioma button{font:600 .9rem/1 inherit;padding:10px 14px;border:0;background:transparent;color:var(--acento);cursor:pointer;min-height:40px}
+.idioma button[aria-pressed="true"]{background:var(--acento);color:#fff}
+nav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font-size:.86rem;color:var(--fg);text-decoration:none;padding:9px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
+main{max-width:640px;margin:0 auto;padding:6px 16px 28px}
+section{scroll-margin-top:66px;padding-top:18px}
+h2{font:700 1.2rem/1.2 Georgia,serif;color:var(--acento);margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--acento)}
+.plato{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.plato:last-child{border-bottom:0}
+.nombre{font-weight:650}
+.precio{font-weight:650;text-align:right;white-space:nowrap;grid-column:2;grid-row:1 / span 2}
+.pnota{display:block;font-weight:400;font-size:.74rem;color:var(--muted)}
+.desc{grid-column:1;color:var(--muted);font-size:.9rem;margin:0}
+.marcas{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.al{font-size:.72rem;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--card)}
+.pic{color:#b3261e;border-color:#ecc9c6}
+footer{max-width:640px;margin:0 auto;padding:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
+.muestra{background:#fff4d6;color:#6b4a00;font-size:.84rem;padding:9px 16px;text-align:center}
+[data-l]{display:none}
+html[lang="es"] [data-l="es"],html[lang="en"] [data-l="en"]{display:revert}
+html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:block}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mariscos La Ola Nueve</h1>
+  <p class="lema"><span data-l="es">Mariscos frescos estilo Sinaloa · menú de ejemplo</span><span data-l="en">Fresh Sinaloa-style seafood · sample menu</span></p>
+  <p class="datos">Negocio ficticio, Mazatlán, Sinaloa · 669 000 0000<br><span data-l="es">Todos los días de 11:00 a 19:00</span><span data-l="en">Open daily, 11 am to 7 pm</span></p>
+</header>
+<div class="barra"><div class="barra-in">
+  <div class="idioma" role="group" aria-label="Idioma / Language">
+    <button type="button" data-set="es" aria-pressed="true">Español</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+  <nav aria-label="Secciones / Sections"><a href="#s1" data-l="es">Para empezar</a><a href="#s1" data-l="en">Starters</a><a href="#s2" data-l="es">Ceviches y aguachiles</a><a href="#s2" data-l="en">Ceviches &amp; Aguachiles</a><a href="#s3" data-l="es">Cocteles</a><a href="#s3" data-l="en">Seafood Cocktails</a><a href="#s4" data-l="es">Tacos</a><a href="#s4" data-l="en">Tacos</a><a href="#s5" data-l="es">Platos fuertes</a><a href="#s5" data-l="en">Main Dishes</a><a href="#s6" data-l="es">Para los niños</a><a href="#s6" data-l="en">For Kids</a><a href="#s7" data-l="es">Bebidas</a><a href="#s7" data-l="en">Drinks</a></nav>
+</div></div>
+<main>
+<section id="s1"><h2><span data-l="es">Para empezar</span><span data-l="en">Starters</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Tostada de ceviche de sierra</span><span data-l="en">Sierra mackerel ceviche tostada</span></div><div class="precio">$55</div><p class="desc"><span data-l="es">Pescado sierra curtido en limón con zanahoria, cebolla y cilantro.</span><span data-l="en">Finely chopped mackerel cured in lime juice with carrot, onion and cilantro, on a crisp corn tortilla.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Tostada de marlín ahumado</span><span data-l="en">Smoked marlin tostada</span></div><div class="precio">$75</div><p class="desc"><span data-l="es">Marlín ahumado guisado con tomate y chile, con mayonesa y aguacate.</span><span data-l="en">Smoked marlin stewed with tomato and chili, with mayo and avocado on a crisp corn tortilla.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Huevo</span><span data-l="en">Egg</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Ostiones en su concha</span><span data-l="en">Oysters on the half shell</span></div><div class="precio">$190<span class="pnota"><span data-l="es">media docena</span><span data-l="en">half dozen</span></span></div><p class="desc"><span data-l="es">Frescos, con limón y salsa de la casa.</span><span data-l="en">Raw, served with lime and house hot sauce.</span></p><div class="marcas"><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Chicharrón de pescado</span><span data-l="en">Crispy fried fish bites</span></div><div class="precio">$165</div><p class="desc"><span data-l="es">Trozos de pescado empanizados y fritos.</span><span data-l="en">Bite-size pieces of fish, breaded and deep fried.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span></div></div>
+</section>
+<section id="s2"><h2><span data-l="es">Ceviches y aguachiles</span><span data-l="en">Ceviches &amp; Aguachiles</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Ceviche de camarón</span><span data-l="en">Shrimp ceviche</span></div><div class="precio">$210</div><p class="desc"><span data-l="es">Camarón curtido en limón con pepino, tomate, cebolla y cilantro.</span><span data-l="en">Shrimp cured in lime juice with cucumber, tomato, onion and cilantro.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Aguachile verde</span><span data-l="en">Green aguachile</span></div><div class="precio">$230</div><p class="desc"><span data-l="es">Camarón crudo en limón con chile serrano, pepino y cebolla morada.</span><span data-l="en">Raw shrimp in lime juice and serrano chili, with cucumber and red onion. A Sinaloa classic, served cold.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al pic">●●● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Aguachile rojo</span><span data-l="en">Red aguachile</span></div><div class="precio">$230</div><p class="desc"><span data-l="es">Camarón crudo en limón con chiltepín y chile de árbol.</span><span data-l="en">Raw shrimp in lime juice with chiltepín and árbol chili. Our hottest dish.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al pic">●●● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Callo de hacha natural</span><span data-l="en">Fresh pen shell scallops</span></div><div class="precio">$380</div><p class="desc"><span data-l="es">Callo crudo rebanado, con limón, pepino y cebolla morada.</span><span data-l="en">Raw sliced scallops with lime, cucumber and red onion.</span></p><div class="marcas"><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span></div></div>
+</section>
+<section id="s3"><h2><span data-l="es">Cocteles</span><span data-l="en">Seafood Cocktails</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Coctel de camarón</span><span data-l="en">Shrimp cocktail</span></div><div class="precio">$195</div><p class="desc"><span data-l="es">Camarón cocido en su caldo, con tomate, pepino, cebolla, cilantro y aguacate.</span><span data-l="en">Mexican style: cooked shrimp served in its broth with tomato, cucumber, onion, cilantro and avocado.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Campechana</span><span data-l="en">Mixed seafood cocktail</span></div><div class="precio">$260</div><p class="desc"><span data-l="es">Camarón, pulpo, ostión y callo en un solo coctel.</span><span data-l="en">Shrimp, octopus, oyster and scallop in one cocktail.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Coctel de pulpo</span><span data-l="en">Octopus cocktail</span></div><div class="precio">$220</div><p class="desc"><span data-l="es">Pulpo cocido con tomate, pepino, cebolla y cilantro.</span><span data-l="en">Cooked octopus with tomato, cucumber, onion and cilantro.</span></p><div class="marcas"><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span></div></div>
+</section>
+<section id="s4"><h2><span data-l="es">Tacos</span><span data-l="en">Tacos</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Taco gobernador</span><span data-l="en">Gobernador taco</span></div><div class="precio">$70<span class="pnota"><span data-l="es">por pieza</span><span data-l="en">each</span></span></div><p class="desc"><span data-l="es">Camarón guisado con queso derretido, chile poblano y cebolla, en tortilla de maíz.</span><span data-l="en">Sautéed shrimp with melted cheese, poblano pepper and onion in a corn tortilla.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Taco de marlín</span><span data-l="en">Smoked marlin taco</span></div><div class="precio">$65<span class="pnota"><span data-l="es">por pieza</span><span data-l="en">each</span></span></div><p class="desc"><span data-l="es">Marlín ahumado guisado con queso en tortilla de maíz dorada.</span><span data-l="en">Stewed smoked marlin and cheese in a griddled corn tortilla.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Taco de pescado capeado</span><span data-l="en">Battered fish taco</span></div><div class="precio">$55<span class="pnota"><span data-l="es">por pieza</span><span data-l="en">each</span></span></div><p class="desc"><span data-l="es">Pescado capeado y frito, con repollo, crema y pico de gallo.</span><span data-l="en">Beer-battered fried fish with cabbage, cream and pico de gallo.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span><span class="al"><span data-l="es">Huevo</span><span data-l="en">Egg</span></span></div></div>
+</section>
+<section id="s5"><h2><span data-l="es">Platos fuertes</span><span data-l="en">Main Dishes</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Pescado zarandeado</span><span data-l="en">Zarandeado grilled fish</span></div><div class="precio">$420<span class="pnota"><span data-l="es">por kilo</span><span data-l="en">per kilo</span></span></div><p class="desc"><span data-l="es">Pescado entero abierto, marinado y asado a las brasas. Para compartir.</span><span data-l="en">Whole butterflied fish, marinated and grilled over charcoal. Made to share.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Soya</span><span data-l="en">Soy</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Camarones a la diabla</span><span data-l="en">Deviled shrimp</span></div><div class="precio">$245</div><p class="desc"><span data-l="es">Camarones en salsa roja picante de chiles secos.</span><span data-l="en">Shrimp in a hot red sauce made with dried chilies.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span><span class="al pic">●●● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Camarones al mojo de ajo</span><span data-l="en">Garlic butter shrimp</span></div><div class="precio">$245</div><p class="desc"><span data-l="es">Camarones salteados en mantequilla y ajo dorado.</span><span data-l="en">Shrimp sautéed in butter and golden garlic.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Camarones empanizados</span><span data-l="en">Breaded shrimp</span></div><div class="precio">$245</div><p class="desc"><span data-l="es">Camarones empanizados y fritos.</span><span data-l="en">Shrimp, breaded and deep fried.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span><span class="al"><span data-l="es">Huevo</span><span data-l="en">Egg</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Camarones al coco</span><span data-l="en">Coconut shrimp</span></div><div class="precio">$260</div><p class="desc"><span data-l="es">Camarones empanizados con coco rallado, con salsa de mango.</span><span data-l="en">Shrimp breaded with shredded coconut and served with mango sauce.</span></p><div class="marcas"><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span><span class="al"><span data-l="es">Huevo</span><span data-l="en">Egg</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Filete a la plancha</span><span data-l="en">Grilled fish fillet</span></div><div class="precio">$210</div><p class="desc"><span data-l="es">Filete de pescado del día a la plancha.</span><span data-l="en">Catch of the day fillet, grilled on the flat top.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Pulpo a las brasas</span><span data-l="en">Charcoal-grilled octopus</span></div><div class="precio">$320</div><p class="desc"><span data-l="es">Pulpo asado con ajo y chile guajillo.</span><span data-l="en">Grilled octopus with garlic and guajillo chili.</span></p><div class="marcas"><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Mariscada para dos</span><span data-l="en">Seafood platter for two</span></div><div class="precio">$690</div><p class="desc"><span data-l="es">Camarones, pulpo, filete, callo y jaiba, fríos y calientes.</span><span data-l="en">Shrimp, octopus, fish fillet, scallops and crab, served hot and cold.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Crustáceos</span><span data-l="en">Crustaceans</span></span><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span><span class="al"><span data-l="es">Huevo</span><span data-l="en">Egg</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+</section>
+<section id="s6"><h2><span data-l="es">Para los niños</span><span data-l="en">For Kids</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Dedos de pescado</span><span data-l="en">Fish fingers</span></div><div class="precio">$130</div><p class="desc"><span data-l="es">Pescado empanizado con papas a la francesa.</span><span data-l="en">Breaded fish strips with french fries.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span><span class="al"><span data-l="es">Huevo</span><span data-l="en">Egg</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Quesadilla</span><span data-l="en">Cheese quesadilla</span></div><div class="precio">$85</div><p class="desc"><span data-l="es">Tortilla de harina con queso derretido.</span><span data-l="en">Flour tortilla with melted cheese.</span></p><div class="marcas"><span class="al"><span data-l="es">Lácteos</span><span data-l="en">Dairy</span></span><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span></div></div>
+</section>
+<section id="s7"><h2><span data-l="es">Bebidas</span><span data-l="en">Drinks</span></h2>
+<div class="plato"><div class="nombre"><span data-l="es">Agua fresca</span><span data-l="en">Agua fresca (fresh fruit water)</span></div><div class="precio">$40</div><p class="desc"><span data-l="es">Jamaica, horchata o limón.</span><span data-l="en">Hibiscus, horchata (sweet rice drink) or limeade.</span></p></div>
+<div class="plato"><div class="nombre"><span data-l="es">Limonada mineral</span><span data-l="en">Sparkling limeade</span></div><div class="precio">$45</div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Refresco</span><span data-l="en">Soft drink</span></div><div class="precio">$35</div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Cerveza nacional</span><span data-l="en">Mexican beer</span></div><div class="precio">$45</div><div class="marcas"><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Michelada</span><span data-l="en">Michelada</span></div><div class="precio">$75</div><p class="desc"><span data-l="es">Cerveza con limón, sal y salsas, en vaso escarchado.</span><span data-l="en">Beer with lime juice, salt and savory sauces, in a salt-rimmed glass.</span></p><div class="marcas"><span class="al"><span data-l="es">Gluten</span><span data-l="en">Gluten</span></span><span class="al"><span data-l="es">Soya</span><span data-l="en">Soy</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+<div class="plato"><div class="nombre"><span data-l="es">Clamato preparado</span><span data-l="en">Seasoned Clamato</span></div><div class="precio">$70</div><p class="desc"><span data-l="es">Jugo de tomate con almeja, limón y salsas. Sin alcohol.</span><span data-l="en">Tomato and clam juice with lime and savory sauces. Non-alcoholic.</span></p><div class="marcas"><span class="al"><span data-l="es">Moluscos</span><span data-l="en">Mollusks</span></span><span class="al pic">● <span data-l="es">Picante</span><span data-l="en">Spicy</span></span></div></div>
+</section>
+</main>
+<footer>
+  <p><span data-l="es">Precios en pesos mexicanos con IVA incluido. Si tienes alguna alergia, avisa a tu mesero.</span><span data-l="en">Prices in Mexican pesos, tax included. Please tell your server about any allergy.</span></p>
+</footer>
+<script>
+(function(){
+  var raiz=document.documentElement, botones=document.querySelectorAll('[data-set]');
+  function poner(l){
+    raiz.lang=l;
+    botones.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.set===l ? 'true' : 'false')});
+    try{localStorage.setItem('menu-idioma', l)}catch(e){}
+  }
+  var guardado=null; try{guardado=localStorage.getItem('menu-idioma')}catch(e){}
+  var nav=(navigator.language||'es').toLowerCase();
+  poner(guardado || (nav.indexOf('es')===0 ? 'es' : 'en'));
+  botones.forEach(function(b){b.addEventListener('click', function(){poner(b.dataset.set)})});
+})();
+</script>
+</body>
+</html>
