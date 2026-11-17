@@ -18,16 +18,19 @@
 <meta property="og:image:alt" content="Mazatlán Bilingüe: tu menú en español e inglés">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Mazatlán Bilingüe: menú en español e inglés","serviceType":"Traducción y diseño de menús bilingües para restaurantes","areaServed":{"@type":"City","name":"Mazatlán"},"url":"https://jesus-jazisenot.github.io/mazatlan-bilingue/","inLanguage":"es-MX","provider":{"@type":"Person","name":"Jesús Rodríguez","address":{"@type":"PostalAddress","addressLocality":"Mazatlán","addressRegion":"Sinaloa","addressCountry":"MX"}},"offers":[{"@type":"Offer","name":"Menú bilingüe en PDF + página con QR","price":"700","priceCurrency":"MXN"},{"@type":"Offer","name":"Menú bilingüe + ficha de Google en inglés","price":"1000","priceCurrency":"MXN"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
 :root{
-  --mar:#0e5a6b; --mar-osc:#093f4b; --mar-claro:#dcecef; --arena:#f7f1e6; --papel:#fffdf9;
-  --tinta:#1d2528; --suave:#5a6468; --linea:#e3dccd; --coral:#c9492c; --coral-osc:#a63a21;
+  --mar:#123E46; --mar-osc:#123E46; --mar-claro:#dcecef; --arena:#F7F3EB; --papel:#FFFDF8;
+  --tinta:#202B2E; --suave:#526166; --linea:#e3dccd; --coral:#B83F29; --coral-osc:#9a3321;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--arena);color:var(--tinta);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em;text-wrap:balance}
-h1{font-size:clamp(2.1rem,6.2vw,3.5rem);letter-spacing:-.02em;color:var(--mar-osc)}
+body{margin:0;background:var(--arena);color:var(--tinta);font:400 17px/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.1;}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;text-wrap:balance}
+h1{font-size:clamp(2.25rem,6vw,3.25rem);letter-spacing:-.01em;color:var(--mar-osc)}
 h2{font-size:clamp(1.6rem,4vw,2.3rem);color:var(--mar-osc)}
 h3{font-size:1.15rem}
 p{margin:0 0 1em}
@@ -37,7 +40,7 @@ img{max-width:100%;height:auto;display:block}
 .en{font-style:italic;color:var(--suave)}
 
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0}
-.marca{font:700 1.15rem Georgia,serif;color:var(--mar-osc);text-decoration:none}
+.marca{font:400 1.3rem "DM Serif Display",Georgia,serif;color:var(--mar-osc);text-decoration:none}
 .marca span{color:var(--coral)}
 .top a.mini{font-size:.92rem;font-weight:600;text-decoration:none;padding:9px 14px;border:1.5px solid var(--mar);border-radius:99px}
 
@@ -50,30 +53,35 @@ img{max-width:100%;height:auto;display:block}
 .btn.sec{border:1.5px solid var(--mar);color:var(--mar);background:var(--papel)}
 .btn:focus-visible,a:focus-visible{outline:3px solid var(--mar);outline-offset:3px}
 .nota{font-size:.9rem;color:var(--suave);margin-top:12px}
-.hoja{background:#fff;border:1px solid var(--linea);border-radius:6px;box-shadow:0 18px 40px -18px rgba(9,63,75,.45);transform:rotate(1.4deg);overflow:hidden}
+.hoja{display:block;background:#fff;border:1px solid var(--linea);border-radius:8px;box-shadow:0 12px 32px #093F4B24;overflow:hidden}
+.pie{font-size:.85rem;color:var(--suave);margin:8px 0 0;text-align:center}
+.oferta{font-weight:700;color:var(--mar);font-size:1.05rem;margin:18px 0 0}
+.link{display:inline-block;margin-top:12px;font-weight:500}
 
 section{padding:56px 0}
 .franja{background:var(--papel);border-block:1px solid var(--linea)}
 .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:26px}
 .cols h3{color:var(--mar)}
 .cols p{color:var(--suave);font-size:.97rem;margin:0}
-.num{font:700 .8rem system-ui;letter-spacing:.08em;color:var(--coral);display:block;margin-bottom:6px}
+.num{font:700 .8rem "DM Sans",sans-serif;letter-spacing:.08em;color:var(--coral);display:block;margin-bottom:6px}
 
 .ejemplo{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
-.cel{width:300px;height:560px;border:10px solid #1d2528;border-radius:34px;overflow:hidden;background:#fff;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.cel{width:300px;height:560px;border:4px solid #1d2528;border-radius:34px;overflow:hidden;background:#fff;box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
 .cel iframe{width:100%;height:100%;border:0}
 .ejemplo ul{padding-left:20px;margin:0 0 1.2em}
 .ejemplo li{margin-bottom:.5em}
 
 .pasos{counter-reset:p;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:26px;padding:0;list-style:none}
 .pasos li{counter-increment:p;border-top:3px solid var(--mar);padding-top:14px}
-.pasos li::before{content:counter(p);font:700 2rem Georgia,serif;color:var(--mar);display:block;line-height:1}
+.pasos li::before{content:counter(p);font:400 2.2rem "DM Serif Display",Georgia,serif;color:var(--mar);display:block;line-height:1}
 .pasos p{color:var(--suave);font-size:.97rem;margin:.4em 0 0}
 
-.precios{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
-.precio{background:var(--papel);border:1px solid var(--linea);border-radius:12px;padding:22px}
-.precio.dest{border:2px solid var(--mar)}
-.precio .monto{font:700 2.2rem Georgia,serif;color:var(--mar-osc);margin:.2em 0}
+.precios{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:26px}
+.precio{background:var(--papel);border:1px solid var(--linea);border-radius:12px;padding:28px}
+.precio.dest{border:2px solid var(--mar);background:#fff}
+.precio .btn{margin-top:18px;width:100%}
+.extra{margin-top:18px;padding:16px 20px;border:1px dashed var(--linea);border-radius:12px;color:var(--suave)}
+.precio .monto{font:400 2.4rem "DM Serif Display",Georgia,serif;color:var(--mar-osc);margin:.2em 0}
 .precio .monto small{font:400 .9rem system-ui;color:var(--suave)}
 .precio ul{padding-left:18px;margin:0;color:var(--suave);font-size:.95rem}
 .precio li{margin-bottom:.35em}
@@ -111,32 +119,25 @@ footer{padding:22px 0 34px;font-size:.88rem;color:var(--suave)}
 
   <header class="hero">
     <div>
-      <h1>Tu menú en español y en inglés, listo para imprimir</h1>
-      <p class="lead">Si a tu restaurante llegan turistas que no hablan español, el menú es lo primero que no entienden. Te lo entrego en los dos idiomas: una carta en PDF para imprimir y una página para el celular con su código QR.</p>
-      <p class="en">Your menu in Spanish and English: a print-ready PDF and a phone page with a QR code.</p>
+      <h1>Que tus clientes entiendan tu menú, también en inglés</h1>
+      <p class="lead">Tu carta en español e inglés, en PDF para imprimir y en una página con QR. Mándame una foto de tu menú y prueba gratis con 5 platillos.</p>
+      <p class="oferta">$700 MXN · Pago al recibir · Sin mensualidad</p>
       <div class="btns">
-        <a class="btn wa" href="https://wa.me/526695939300?text=Hola%20Jes%C3%BAs%2C%20quiero%20una%20muestra%20gratis%20de%20mi%20men%C3%BA%20en%20ingl%C3%A9s.%20Mi%20negocio%20es%3A%20">Pedir muestra gratis por WhatsApp</a>
-        <a class="btn sec" href="#ejemplo">Ver un ejemplo</a>
+        <a class="btn wa" href="https://wa.me/526695939300?text=Hola%20Jes%C3%BAs%2C%20quiero%20una%20muestra%20gratis%20de%20mi%20men%C3%BA%20en%20ingl%C3%A9s.%20Mi%20negocio%20es%3A%20">Pedir mi muestra gratis</a>
       </div>
-      <p class="nota">La muestra son 5 platillos de tu menú, traducidos y acomodados. Sin costo y sin compromiso.</p>
+      <p class="nota">5 platillos de tu menú, traducidos y acomodados. Sin costo y sin compromiso.</p>
+      <a class="link" href="#ejemplo">Ver un ejemplo →</a>
     </div>
-    <a class="hoja" href="ejemplo/menu.pdf" aria-label="Abrir el menú de ejemplo en PDF">
-      <img src="ejemplo/vista.jpg" width="900" height="1165" alt="Primera página de un menú de mariscos de ejemplo, con cada platillo en español y en inglés, precios y código QR">
-    </a>
+    <div>
+      <a class="hoja" href="ejemplo/menu.pdf" aria-label="Abrir el menú de ejemplo en PDF">
+        <img src="ejemplo/vista.jpg" width="900" height="1165" alt="Primera página de un menú de mariscos de ejemplo, con cada platillo en español y en inglés, precios y código QR">
+      </a>
+      <p class="pie">Ejemplo de un restaurante ficticio</p>
+    </div>
   </header>
 </div>
 
-<section class="franja">
-  <div class="wrap">
-    <h2>Qué recibes</h2>
-    <div class="cols">
-      <div><span class="num">01</span><h3>Carta en PDF</h3><p>Tamaño carta, con cada platillo en español y en inglés. La imprimes donde tú quieras, las veces que quieras.</p></div>
-      <div><span class="num">02</span><h3>Página para celular</h3><p>El cliente escanea y elige idioma. No tiene que descargar nada y es ligera: abre rápido aunque la señal sea mala.</p></div>
-      <div><span class="num">03</span><h3>Código QR</h3><p>Va en la carta y también suelto, para pegarlo en las mesas o en la entrada.</p></div>
-      <div><span class="num">04</span><h3>Alérgenos marcados</h3><p>Pescado, camarón, moluscos, lácteos, gluten y picante, señalados en cada platillo y en los dos idiomas.</p></div>
-    </div>
-  </div>
-</section>
+
 
 <section id="ejemplo">
   <div class="wrap ejemplo">
@@ -159,6 +160,18 @@ footer{padding:22px 0 34px;font-size:.88rem;color:var(--suave)}
 
 <section class="franja">
   <div class="wrap">
+    <h2>Qué recibes</h2>
+    <div class="cols">
+      <div><span class="num">01</span><h3>Carta en PDF</h3><p>Tamaño carta, con cada platillo en español y en inglés. La imprimes donde tú quieras, las veces que quieras.</p></div>
+      <div><span class="num">02</span><h3>Página para celular</h3><p>El cliente escanea y elige idioma. No tiene que descargar nada y es ligera: abre rápido aunque la señal sea mala.</p></div>
+      <div><span class="num">03</span><h3>Código QR</h3><p>Va en la carta y también suelto, para pegarlo en las mesas o en la entrada.</p></div>
+      <div><span class="num">04</span><h3>Alérgenos marcados</h3><p>Pescado, camarón, moluscos, lácteos, gluten y picante, señalados en cada platillo y en los dos idiomas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="franja">
+  <div class="wrap">
     <h2>Cómo funciona</h2>
     <ol class="pasos">
       <li><h3>Me mandas tu menú</h3><p>Una foto por WhatsApp basta. Si ya lo tienes en un archivo, mejor.</p></li>
@@ -173,22 +186,19 @@ footer{padding:22px 0 34px;font-size:.88rem;color:var(--suave)}
     <h2>Precios</h2>
     <p>En pesos mexicanos. Es lo que pagas en total; no hay mensualidad.</p>
     <div class="precios">
-      <div class="precio">
+      <div class="precio dest">
         <h3>Menú bilingüe</h3>
         <p class="monto">$700</p>
         <ul><li>Carta en PDF lista para imprimir</li><li>Página para celular con QR</li><li>Hasta 60 platillos</li><li>Una ronda de cambios incluida</li></ul>
+        <a class="btn wa" href="https://wa.me/526695939300?text=Hola%20Jes%C3%BAs%2C%20quiero%20una%20muestra%20gratis%20de%20mi%20men%C3%BA%20en%20ingl%C3%A9s.%20Mi%20negocio%20es%3A%20">Pedir mi muestra gratis</a>
       </div>
-      <div class="precio dest">
+      <div class="precio">
         <h3>Menú + ficha de Google</h3>
         <p class="monto">$1,000</p>
         <ul><li>Todo lo del menú bilingüe</li><li>Tu ficha de Google Maps revisada: horario, fotos, descripción y menú en inglés</li><li>La ficha sigue siendo tuya; solo me das permiso de administrarla</li></ul>
       </div>
-      <div class="precio">
-        <h3>Actualización</h3>
-        <p class="monto">$150 <small>cada vez</small></p>
-        <ul><li>Cambio de precios o platillos</li><li>Se actualizan la carta y la página</li><li>Mismo QR: no hay que reimprimirlo</li></ul>
-      </div>
     </div>
+    <p class="extra"><b>Actualizaciones: $150 cada vez.</b> Cambias precios o platillos y se actualizan la carta y la página. El QR es el mismo: no hay que reimprimirlo.</p>
     <p class="nota">La impresión de la carta no está incluida. Por ahora no emito factura.</p>
   </div>
 </section>
@@ -196,10 +206,10 @@ footer{padding:22px 0 34px;font-size:.88rem;color:var(--suave)}
 <section class="franja">
   <div class="wrap">
     <h2>Preguntas</h2>
-    <details><summary>¿Quién hace la traducción?</summary><p>Yo, Jesús Rodríguez, estudiante de Ingeniería en Sistemas en el Tec de Mazatlán. La preparo con ayuda de inteligencia artificial y la reviso platillo por platillo, cuidando los nombres de la cocina de Sinaloa. Tú la apruebas antes de imprimir.</p></details>
+    <details><summary>¿Quién hace la traducción?</summary><p>Yo, Jesús Rodríguez, estudiante de Ingeniería en Sistemas en el Tec de Mazatlán. La preparo con ayuda de inteligencia artificial, la paso por un segundo sistema que busca errores y la reviso platillo por platillo, cuidando los nombres de la cocina de Sinaloa. Tú la apruebas antes de imprimir.</p></details>
     <details><summary>¿Y los alérgenos?</summary><p>Marco los que se ven en el nombre y la descripción de cada platillo, pero el que conoce la receta eres tú. Por eso te pido que los confirmes uno por uno antes de entregar.</p></details>
     <details><summary>¿Necesito tener página de internet?</summary><p>No. La página del menú queda publicada sin costo de hospedaje y el QR lleva directo ahí.</p></details>
-    <details><summary>¿Cuánto tarda?</summary><p>La muestra, uno o dos días. El menú completo, de dos a cuatro días después de que apruebas la traducción.</p></details>
+    <details><summary>¿Cuánto tarda?</summary><p>La muestra, uno o dos días. El menú completo, de 3 a 5 días desde que me mandas la carta completa.</p></details>
     <details><summary>¿Solo para mariscos?</summary><p>No. Sirve para cualquier restaurante, café, bar o puesto con menú: tacos, desayunos, comida corrida, postres.</p></details>
   </div>
 </section>
@@ -209,7 +219,7 @@ footer{padding:22px 0 34px;font-size:.88rem;color:var(--suave)}
     <h2>Empieza con la muestra gratis</h2>
     <p>Mándame una foto de tu menú y te regreso 5 platillos en los dos idiomas, acomodados como en el ejemplo.</p>
     <div class="btns">
-      <a class="btn wa" href="https://wa.me/526695939300?text=Hola%20Jes%C3%BAs%2C%20quiero%20una%20muestra%20gratis%20de%20mi%20men%C3%BA%20en%20ingl%C3%A9s.%20Mi%20negocio%20es%3A%20">WhatsApp 669 593 9300</a>
+      <a class="btn wa" href="https://wa.me/526695939300?text=Hola%20Jes%C3%BAs%2C%20quiero%20una%20muestra%20gratis%20de%20mi%20men%C3%BA%20en%20ingl%C3%A9s.%20Mi%20negocio%20es%3A%20">WhatsApp +52 669 593 9300</a>
     </div>
     <p style="margin-top:16px">O por correo: <a class="correo" href="mailto:bussnestjesus2005@gmail.com">bussnestjesus2005@gmail.com</a></p>
   </div>

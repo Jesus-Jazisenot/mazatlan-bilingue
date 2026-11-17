@@ -6,55 +6,67 @@
 <title>Mariscos La Ola Nueve — Menú / Menu</title>
 <meta name="description" content="Mariscos frescos estilo Sinaloa · menú de ejemplo · Fresh Sinaloa-style seafood · sample menu">
 
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--acento:#0E5A6B;--fg:#1c2326;--muted:#5b6569;--line:#dfe4e5;--bg:#fbfaf7;--card:#fff}
+:root{--acento:#0E5A6B;--fg:#202B2E;--muted:#526166;--line:#DED9CF;--bg:#FBF8F1;--card:#fff;--chip:#F0EDE6;--pic:#A33125}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{padding:22px 16px 14px;max-width:640px;margin:0 auto}
-h1{font:700 1.75rem/1.15 Georgia,"Times New Roman",serif;color:var(--acento);margin:0 0 6px}
-.lema{color:var(--muted);font-style:italic;margin:0}
-.datos{color:var(--muted);font-size:.86rem;margin:8px 0 0}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.5 "DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:20px 20px 16px;max-width:640px;margin:0 auto;position:relative;overflow:hidden}
+.marca{display:flex;gap:14px;align-items:center}
+.logo{width:56px;height:56px;object-fit:contain;flex:none}
+.adorno{position:absolute;right:-18px;top:-12px;width:140px;opacity:.12;pointer-events:none}
+h1{font:700 26px/1.15 "Libre Baskerville",Georgia,serif;color:var(--acento);margin:0 0 4px}
+.lema{color:var(--muted);font-size:14px;font-style:italic;margin:0}
+.mxn{color:var(--muted);font-size:13px;margin:10px 0 0}
 .barra{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)}
-.barra-in{max-width:640px;margin:0 auto;padding:8px 16px;display:flex;gap:10px;align-items:center}
-.idioma{display:flex;border:1.5px solid var(--acento);border-radius:99px;overflow:hidden;flex:none}
-.idioma button{font:600 .9rem/1 inherit;padding:10px 14px;border:0;background:transparent;color:var(--acento);cursor:pointer;min-height:40px}
+.fila{max-width:640px;margin:0 auto;padding:8px 20px 0}
+.fila+.fila{padding:8px 20px 8px}
+.idioma{display:inline-flex;border:1.5px solid var(--acento);border-radius:99px;overflow:hidden}
+.idioma button{font:600 15px/1 "DM Sans",sans-serif;padding:0 18px;border:0;background:transparent;color:var(--acento);cursor:pointer;min-height:44px}
 .idioma button[aria-pressed="true"]{background:var(--acento);color:#fff}
-nav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+nav{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
-nav a{flex:none;font-size:.86rem;color:var(--fg);text-decoration:none;padding:9px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
-main{max-width:640px;margin:0 auto;padding:6px 16px 28px}
-section{scroll-margin-top:66px;padding-top:18px}
-h2{font:700 1.2rem/1.2 Georgia,serif;color:var(--acento);margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--acento)}
-.plato{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:11px 0;border-bottom:1px solid var(--line)}
+nav a{flex:none;font:500 14px/1 "DM Sans",sans-serif;color:var(--fg);text-decoration:none;padding:0 14px;min-height:44px;display:flex;align-items:center;border-radius:99px}
+nav a:hover{background:var(--chip)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+main{max-width:640px;margin:0 auto;padding:0 20px 32px}
+section{scroll-margin-top:112px;padding-top:32px}
+h2{font:700 23px/1.25 "Libre Baskerville",Georgia,serif;color:var(--acento);margin:0 0 4px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.plato{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:18px 0;border-bottom:1px solid var(--line)}
 .plato:last-child{border-bottom:0}
-.nombre{font-weight:650}
-.precio{font-weight:650;text-align:right;white-space:nowrap;grid-column:2;grid-row:1 / span 2}
-.pnota{display:block;font-weight:400;font-size:.74rem;color:var(--muted)}
-.desc{grid-column:1;color:var(--muted);font-size:.9rem;margin:0}
-.marcas{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
-.al{font-size:.72rem;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--card)}
-.pic{color:#b3261e;border-color:#ecc9c6}
-footer{max-width:640px;margin:0 auto;padding:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
-.muestra{background:#fff4d6;color:#6b4a00;font-size:.84rem;padding:9px 16px;text-align:center}
+.nombre{font:600 17px/1.3 "DM Sans",sans-serif}
+.precio{font:700 16px/1.3 "DM Sans",sans-serif;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;grid-column:2;grid-row:1 / span 2}
+.pnota{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.desc{grid-column:1;color:var(--muted);font-size:15px;line-height:1.55;margin:6px 0 0}
+.marcas{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.al{font-size:13px;line-height:1.4;padding:2px 9px;border-radius:99px;color:var(--muted);background:var(--chip)}
+.pic{color:var(--pic)}
+footer{max-width:640px;margin:0 auto;padding:18px 20px 28px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer p{margin:0 0 6px}
+.muestra{background:#fff4d6;color:#6b4a00;font-size:14px;padding:9px 20px;text-align:center}
 [data-l]{display:none}
 html[lang="es"] [data-l="es"],html[lang="en"] [data-l="en"]{display:revert}
-html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:block}
+html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:flex}
 </style>
 </head>
 <body>
 
 <header>
+  
+  <div class="marca"><div>
   <h1>Mariscos La Ola Nueve</h1>
   <p class="lema"><span data-l="es">Mariscos frescos estilo Sinaloa · menú de ejemplo</span><span data-l="en">Fresh Sinaloa-style seafood · sample menu</span></p>
-  <p class="datos">Negocio ficticio, Mazatlán, Sinaloa · 669 000 0000<br><span data-l="es">Todos los días de 11:00 a 19:00</span><span data-l="en">Open daily, 11 am to 7 pm</span></p>
+  </div></div>
+  <p class="mxn"><span data-l="es">Precios en pesos mexicanos (MXN)</span><span data-l="en">Prices in Mexican pesos (MXN)</span></p>
 </header>
-<div class="barra"><div class="barra-in">
-  <div class="idioma" role="group" aria-label="Idioma / Language">
+<div class="barra">
+  <div class="fila"><div class="idioma" role="group" aria-label="Idioma / Language">
     <button type="button" data-set="es" aria-pressed="true">Español</button>
     <button type="button" data-set="en" aria-pressed="false">English</button>
-  </div>
-  <nav aria-label="Secciones / Sections"><a href="#s1" data-l="es">Para empezar</a><a href="#s1" data-l="en">Starters</a><a href="#s2" data-l="es">Ceviches y aguachiles</a><a href="#s2" data-l="en">Ceviches &amp; Aguachiles</a><a href="#s3" data-l="es">Cocteles</a><a href="#s3" data-l="en">Seafood Cocktails</a><a href="#s4" data-l="es">Tacos</a><a href="#s4" data-l="en">Tacos</a><a href="#s5" data-l="es">Platos fuertes</a><a href="#s5" data-l="en">Main Dishes</a><a href="#s6" data-l="es">Para los niños</a><a href="#s6" data-l="en">For Kids</a><a href="#s7" data-l="es">Bebidas</a><a href="#s7" data-l="en">Drinks</a></nav>
-</div></div>
+  </div></div>
+  <div class="fila"><nav aria-label="Secciones / Sections"><a href="#s1" data-l="es">Para empezar</a><a href="#s1" data-l="en">Starters</a><a href="#s2" data-l="es">Ceviches y aguachiles</a><a href="#s2" data-l="en">Ceviches &amp; Aguachiles</a><a href="#s3" data-l="es">Cocteles</a><a href="#s3" data-l="en">Seafood Cocktails</a><a href="#s4" data-l="es">Tacos</a><a href="#s4" data-l="en">Tacos</a><a href="#s5" data-l="es">Platos fuertes</a><a href="#s5" data-l="en">Main Dishes</a><a href="#s6" data-l="es">Para los niños</a><a href="#s6" data-l="en">For Kids</a><a href="#s7" data-l="es">Bebidas</a><a href="#s7" data-l="en">Drinks</a></nav></div>
+</div>
 <main>
 <section id="s1"><h2><span data-l="es">Para empezar</span><span data-l="en">Starters</span></h2>
 <div class="plato"><div class="nombre"><span data-l="es">Tostada de ceviche de sierra</span><span data-l="en">Sierra mackerel ceviche tostada</span></div><div class="precio">$55</div><p class="desc"><span data-l="es">Pescado sierra curtido en limón con zanahoria, cebolla y cilantro.</span><span data-l="en">Finely chopped mackerel cured in lime juice with carrot, onion and cilantro, on a crisp corn tortilla.</span></p><div class="marcas"><span class="al"><span data-l="es">Pescado</span><span data-l="en">Fish</span></span></div></div>
@@ -103,6 +115,8 @@ html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:bl
 </main>
 <footer>
   <p><span data-l="es">Precios en pesos mexicanos con IVA incluido. Si tienes alguna alergia, avisa a tu mesero.</span><span data-l="en">Prices in Mexican pesos, tax included. Please tell your server about any allergy.</span></p>
+  <p>Negocio ficticio, Mazatlán, Sinaloa · 669 000 0000</p>
+  <p><span data-l="es">Todos los días de 11:00 a 19:00</span><span data-l="en">Open daily, 11 am to 7 pm</span></p>
 </footer>
 <script>
 (function(){
