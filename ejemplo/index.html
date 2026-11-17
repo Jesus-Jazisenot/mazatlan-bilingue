@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--acento:#0E5A6B;--fg:#202B2E;--muted:#526166;--line:#DED9CF;--bg:#FBF8F1;--card:#fff;--chip:#F0EDE6;--pic:#A33125}
+:root{--acento:#0B7A8A;--fg:#1E2A2E;--muted:#526166;--line:#DED9CF;--bg:#FBF5EA;--card:#fff;--chip:#F0EDE6;--pic:#A33125;--banda:#0B7A8A;--btxt:#FFFFFF;--color2:#E2603F}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.5 "DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 header{padding:20px 20px 16px;max-width:640px;margin:0 auto;position:relative;overflow:hidden}
@@ -44,6 +44,11 @@ h2{font:700 23px/1.25 "Libre Baskerville",Georgia,serif;color:var(--acento);marg
 .pic{color:var(--pic)}
 footer{max-width:640px;margin:0 auto;padding:18px 20px 28px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 footer p{margin:0 0 6px}
+header.conbanda{max-width:none;background:var(--banda);border-bottom:4px solid var(--color2)}
+header.conbanda>*{max-width:600px;margin-left:auto;margin-right:auto}
+header.conbanda h1,header.conbanda .lema,header.conbanda .mxn{color:var(--btxt)}
+header.conbanda .adorno{opacity:.18}
+.conbanda~main .precio{color:var(--color2)}
 .muestra{background:#fff4d6;color:#6b4a00;font-size:14px;padding:9px 20px;text-align:center}
 [data-l]{display:none}
 html[lang="es"] [data-l="es"],html[lang="en"] [data-l="en"]{display:revert}
@@ -52,8 +57,8 @@ html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:fl
 </head>
 <body>
 
-<header>
-  
+<header class="conbanda">
+  <img class="adorno" src="adorno.png" alt="">
   <div class="marca"><div>
   <h1>Mariscos La Ola Nueve</h1>
   <p class="lema"><span data-l="es">Mariscos frescos estilo Sinaloa · menú de ejemplo</span><span data-l="en">Fresh Sinaloa-style seafood · sample menu</span></p>
@@ -115,7 +120,7 @@ html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:fl
 </main>
 <footer>
   <p><span data-l="es">Precios en pesos mexicanos con IVA incluido. Si tienes alguna alergia, avisa a tu mesero.</span><span data-l="en">Prices in Mexican pesos, tax included. Please tell your server about any allergy.</span></p>
-  <p>Negocio ficticio, Mazatlán, Sinaloa · 669 000 0000</p>
+  <p>Negocio ficticio, Mazatlán, Sinaloa · Ejemplo</p>
   <p><span data-l="es">Todos los días de 11:00 a 19:00</span><span data-l="en">Open daily, 11 am to 7 pm</span></p>
 </footer>
 <script>
